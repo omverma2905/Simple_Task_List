@@ -1,0 +1,135 @@
+:root {
+    --background: #ffffff;
+    --primary: #007bff;
+    --secondary: #28a745;
+    --accent: #dc3545;
+    --text-dark: #343a40;
+    --text-light: #f8f9fa;
+    --border: #ced4da;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text-dark);
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#new-task-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#new-task-input {
+    flex: 1;
+    background-color: var(--text-light);
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+#new-task-input::placeholder {
+    color: var(--border);
+}
+
+#new-task-submit {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#new-task-submit:hover {
+    background-color: var(--secondary);
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+.task-list h2 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-light);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
+#tasks .task .content {
+    flex: 1;
+}
+
+#tasks .task .content .text {
+    color: var(--text-dark);
+    font-size: 1rem;
+    border: none;
+    background: none;
+    width: 100%;
+}
+
+#tasks .task .actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.task .actions button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.task .actions .edit {
+    color: var(--primary);
+}
+
+.task .actions .edit:hover {
+    color: var(--secondary);
+}
+
+.task .actions .delete {
+    color: var(--accent);
+}
+
+.task .actions .delete:hover {
+    color: crimson;
+}
