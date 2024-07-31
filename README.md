@@ -5,7 +5,7 @@ This project is a basic task management application that allows users to add, ed
 ![image](https://github.com/user-attachments/assets/c0f6270b-2a96-44aa-a857-54cecb5c35bf)
 
 ## Demo
-https://fanciful-mousse-8134a8.netlify.app/
+https://simpletasklistproject.netlify.app/
 
 ## Features
 
